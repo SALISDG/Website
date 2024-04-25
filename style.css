@@ -1,0 +1,144 @@
+.avatar {
+  width: 110px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+body {
+  background: url(./Img/iyiyAz.jpg) no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.asideBox {
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+aside {
+  background-color: #98989880;
+  margin: 10px;
+  border-radius: 15px;
+  min-width: 40vw;
+  min-height: 35vh;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 20px #ffffff80, -10px -10px 20px #ffffff80;
+  text-shadow: 5px 5px 20px #030303;
+}
+
+main,
+popup {
+  background-color: #98989880;
+  border-radius: 10px;
+  min-width: 90vw;
+  min-height: 55vh;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 20px #ffffff80, -10px -10px 20px #ffffff80;
+  text-shadow: 5px 5px 20px #030303;
+}
+
+a,
+notif {
+  border-radius: 15px;
+  margin: 2px 20px;
+  padding: 2px;
+  text-decoration: none;
+  color: rgb(213, 212, 212);
+  border: 2px solid;
+  display: inline;
+}
+
+main a {
+  height: 30px;
+  text-align: center;
+}
+
+.icon {
+  width: 30px;
+}
+
+a:hover,
+notif:hover {
+  transition: 300ms;
+  background-color: #ffffff80;
+  color: #fff;
+}
+
+Link a {
+  margin: 5px 10px;
+}
+
+.Link {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 10px;
+  gap: 5px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup {
+  display: none;
+  animation-name: opacity;
+  animation-duration: 3s;
+}
+
+notif {
+  display: none;
+  width: 80vw;
+  left: 8%;
+  position: absolute;
+  z-index: 2;
+  background: rgba(38, 179, 38, 0.733);
+  animation-name: opacity;
+  animation-duration: 1s;
+  top: 0;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.popup input {
+  background-color: #98989880;
+  outline: none;
+  border-radius: 100px;
+  min-height: 30px;
+  margin: 10px 30px;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 20px #ffffff80, -10px -10px 20px #ffffff80;
+  text-shadow: 5px 5px 20px #030303;
+}
